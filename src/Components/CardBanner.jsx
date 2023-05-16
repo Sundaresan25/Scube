@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { CircleTickIcon } from "../Assests";
-import GButton from "./Global/Gbutton";
+import GButton from "./Global/Gbutton"; //global button
 
 const Container = styled("div")(({ theme }) => ({
   background: "linear-gradient(to bottom, #030f30, #16077c)",
@@ -39,14 +39,14 @@ const ListItemTag = styled(ListItem)(({ theme }) => ({
     width: "3rem",
   },
 
-  ["@media (max-width:780px)"]: {
+  "@media (max-width:780px)": {
     borderRadius: "10px",
     padding: "5px",
     "& svg": {
       width: "2rem",
     },
   },
-  ["@media (max-width:600px)"]: {
+  "@media (max-width:600px)": {
     padding: "5px",
 
     "& svg": {
@@ -76,7 +76,7 @@ export default function CardBanner(props) {
           >
             Start Managing your Website
           </Typography>
-          {/* <DividerIcon /> */}
+
           <Typography
             sx={{
               my: 2,

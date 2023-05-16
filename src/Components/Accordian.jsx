@@ -8,6 +8,7 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { IconButton } from "@mui/material";
 
+// styed components created used MUI
 const Container = styled("div")(({ theme }) => ({
   background: "white",
   width: "100%",
@@ -63,12 +64,14 @@ export default function AccordionComponent() {
   ];
   const [expanded, setExpanded] = React.useState(0);
 
+  
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
 
   return (
     <Container>
+    
       {accordionData.map((data, index) => (
         <Accordion //Mui accordion used
           key={index}

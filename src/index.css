@@ -17,6 +17,7 @@ code {
 .App * {
   font-family: "Roboto", sans-serif;
 }
+
 :root {
   --primary: #052451;
   --secondary: #71829b;

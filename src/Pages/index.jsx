@@ -13,7 +13,7 @@ export default function Home() {
     <div
       className="Home"
       style={{
-        backgroundImage: `url(${bgCover})`,
+        backgroundImage: `url(${bgCover})`, //background image for completed site
         backgroundPosition: "center",
       }}
     >
