@@ -6,10 +6,17 @@ import Card from "../Components/Card";
 import CardBanner from "../Components/CardBanner";
 import Footer from "../Components/Footer";
 import BreadCrumb from "../Components/Global/breadCrumb";
+import bgCover from "../Assests/bg.png";
 
 export default function Home() {
   return (
-    <>
+    <div
+      className="Home"
+      style={{
+        backgroundImage: `url(${bgCover})`,
+        backgroundPosition: "center",
+      }}
+    >
       <Banner1 />
       <Card />
       <CardBanner />
@@ -18,6 +25,6 @@ export default function Home() {
       <Banner3 />
       <BreadCrumb />
       <Footer />
-    </>
+    </div>
   );
 }
