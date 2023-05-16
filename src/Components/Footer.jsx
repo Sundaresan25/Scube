@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 
 import { Logo } from "../Assests";
-import Chromeweb from "../Assests/web.png";
+import Chromeweb from "../Assests/web.png"; //chrome image
 
 const Container = styled("div")(({ theme }) => ({
   display: "flex",
@@ -62,7 +62,6 @@ const LogoContainer = styled("div")({
 });
 
 const ContainerWrap = styled(Grid)(({ theme }) => ({
-  // background: "white",
   width: "95%",
   margin: "10px auto",
 
@@ -118,6 +117,7 @@ export default function Footer() {
     <Box sx={{ background: "#011027" }}>
       <Grid sx={{ py: 3, borderBottom: "2px solid #9da3ac" }}>
         <LogoContainer className="container">
+          {/* logo of site */}
           <Logo />
         </LogoContainer>
       </Grid>
@@ -200,6 +200,7 @@ export default function Footer() {
                 >
                   Check out our 9 reviews
                 </Typography>
+                {/* rating component  */}
                 <Rating
                   name="simple-controlled"
                   value={4}
@@ -207,8 +208,6 @@ export default function Footer() {
                     color: "#00e7b9",
                   }}
                 />
-                {/* <ChromeWebStoreIcon />
-                 */}
               </Grid>
             </MyGrid>
           </Grid>

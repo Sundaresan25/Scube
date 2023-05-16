@@ -33,7 +33,7 @@ export default function Card(props) {
     {
       title: "Check Performance",
       description: "It predicts an overall performance score of webpage",
-      icon: <CheckCirleIcon />,
+      icon: <CheckCirleIcon />, // icons
       id: 1,
     },
     {
@@ -119,6 +119,7 @@ export default function Card(props) {
                   height: "100%",
                 }}
               >
+                {/* icon map dynamically */}
                 {details.icon}
                 <Typography
                   sx={{
@@ -133,12 +134,9 @@ export default function Card(props) {
                 <Typography
                   sx={{
                     my: 2,
-
                     color: "var(--secondary)",
                     fontWeight: "700",
                     fontSize: { xs: "12px", md: "15px", sm: "12px" },
-
-                    // textAlign: "center",
                   }}
                 >
                   {details?.description}

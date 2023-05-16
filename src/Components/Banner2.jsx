@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled } from "@mui/system";
+import { styled } from "@mui/system"; 
 import {
   Box,
   Grid,
@@ -8,7 +8,6 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-
 import DoneIcon from "@mui/icons-material/Done";
 import Audit from "../Assests/page-audit.svg";
 
@@ -24,6 +23,7 @@ const Container = styled("div")(({ theme }) => ({
     flexDirection: "row",
     alignItems: "center",
   },
+
   [theme.breakpoints.up("sm")]: {
     width: "80%",
   },
@@ -32,11 +32,11 @@ const Container = styled("div")(({ theme }) => ({
 const ListItemTag = styled(ListItem)(({ theme }) => ({
   width: "100%",
   margin: "20px auto",
-
   padding: "10px",
 }));
 
 export default function Banner2(props) {
+  
   const list = [
     {
       title: "Add your webpage URL and  get the report in a click",
@@ -61,8 +61,6 @@ export default function Banner2(props) {
       id: 3,
     },
   ];
-
-  // const icon = [<Card3Icon />, <Card2Icon />, <Card3Icon />];
 
   return (
     <Box
@@ -137,10 +135,7 @@ export default function Banner2(props) {
                       color: "#16077c",
                       width: "2rem",
                       height: "2rem",
-                      "@media (max-width:780px)": {
-                        width: "2rem",
-                        height: "2rem",
-                      },
+
                       "@media (max-width:600px)": {
                         width: "1.3rem",
                         height: "1.3rem",

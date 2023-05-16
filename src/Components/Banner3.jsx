@@ -21,14 +21,12 @@ const Container = styled("div")(({ theme }) => ({
   "@media (max-width:600px)": {
     flexDirection: "column",
     alignItems: "center",
-    // background: "white",
+
     width: "100%",
   },
 }));
 
 export default function Banner3(props) {
-  // const icon = [<Card3Icon />, <Card2Icon />, <Card3Icon />];
-
   return (
     <Box
       sx={{

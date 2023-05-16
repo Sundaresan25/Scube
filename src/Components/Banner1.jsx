@@ -91,6 +91,7 @@ const StyledButton = styled("a")({
 });
 
 export default function Banner1(props) {
+  // menu data
   const menus = [
     {
       label: "Product",
@@ -112,6 +113,7 @@ export default function Banner1(props) {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
   const isDesktop = useMediaQuery("(min-width:780px)"); // check if the screen size is larger than 780px
 
+  // function to open drawer in mobile view
   const toggleDrawer = (open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -123,6 +125,7 @@ export default function Banner1(props) {
     setDrawerOpen(open);
   };
 
+  // mobile resposnive list
   const list = (
     <DrawerList onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
       {menus?.map((details, index) => (
@@ -169,6 +172,7 @@ export default function Banner1(props) {
                   margin: "0px 10px",
                 }}
               />
+              {/* map the menus  */}
               {menus.map((details, index) => (
                 <StyledButton
                   sx={{
@@ -181,6 +185,7 @@ export default function Banner1(props) {
               ))}
             </div>
           )}
+          {/* conditional rendering based on screen */}
           {isDesktop ? (
             <div>
               <LogoutIcon />
