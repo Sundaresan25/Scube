@@ -4,6 +4,7 @@ import { Button, styled } from "@mui/material";
 
 export default function GButton(props) {
   const { label, color, background, borderColor, variant, icon } = props; //  destructuring props
+
   const StyledButton = styled(Button)({
     textTransform: "capitalize",
     margin: "5px",
@@ -17,6 +18,7 @@ export default function GButton(props) {
       fontSize: "10px",
     },
   });
+
   return (
     <>
       <StyledButton
@@ -24,7 +26,7 @@ export default function GButton(props) {
         sx={{ color: color, background: background, borderColor: borderColor }} //using props to style button
         variant={variant}
       >
-        {label}
+        {label} {/*label get from props*/}
       </StyledButton>
     </>
   );
