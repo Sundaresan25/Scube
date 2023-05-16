@@ -26,7 +26,7 @@ export default function GButton(props) {
         sx={{ color: color, background: background, borderColor: borderColor }} //using props to style button
         variant={variant}
       >
-        {label} {/*label get from props*/}
+        {label}
       </StyledButton>
     </>
   );
